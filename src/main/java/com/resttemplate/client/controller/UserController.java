@@ -48,41 +48,4 @@ public class UserController {
         return this.request.postTodos(todos);
 
     }
-
-    @GetMapping("/deneme")
-    public String falan (){
-        RegisterBaseRequest userAddRequest = new RegisterBaseRequest();
-        ServiceRequest<UserAddRequest> userAddRequestServiceRequest = new ServiceRequest<>();
-
-        UserAddRequest request = new UserAddRequest();
-        UserAddContacts userAddContacts = new UserAddContacts();
-        ClientRequest clientRequest = new ClientRequest();
-        clientRequest.setClientRef("adsfds");
-        clientRequest.setApplicationGUID("aasdfadsdsfds");
-
-
-        userAddContacts.setContactType("adf");
-        userAddContacts.setAddressLine2("1231");
-        userAddContacts.setAddressLine1("adf");
-        userAddContacts.setCity("adf");
-        userAddContacts.setCountryCode("adf");
-        userAddContacts.setEmailAddress("adf");
-        userAddContacts.setFirstName("taha gokce");
-        userAddContacts.setPostalCode("adf");
-        userAddContacts.setState("adf");
-        userAddContacts.setProvince("adf");
-        userAddContacts.setLastName("adf");
-
-        request.setUserID("falanlarfilanlar");
-        request.setUserAccountName("falanlar");
-        request.setContacts(userAddContacts);
-
-        userAddRequestServiceRequest.setCommand("userAdd");
-        userAddRequestServiceRequest.setClient(clientRequest);
-        userAddRequestServiceRequest.setRequest(request);
-        userAddRequest.setServiceRequest(userAddRequestServiceRequest);
-
-        return registerClientService.userAdd(userAddRequest);
-    }
-
 }

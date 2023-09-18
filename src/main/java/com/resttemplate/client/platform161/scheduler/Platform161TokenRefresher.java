@@ -25,10 +25,10 @@ public class Platform161TokenRefresher {
     public void refreshToken () {
 
         GetUserTokenRequest request = new GetUserTokenRequest(
-                "alper@omreon.com","istanbuL@85"
+                "****","****"
         );
         GetUserTokenResponse getUserTokenResponse = this.restTemplate.postForObject(
-                "https://testing.platform161.com/api/v3/turkcell/tokens"
+                "******/api/v3/***/tokens"
                 ,request
                 ,GetUserTokenResponse.class);
 
