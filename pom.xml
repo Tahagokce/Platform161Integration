@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.restTemplate</groupId>
-	<artifactId>RestTemplate</artifactId>
+	<artifactId>Platform161Integration</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>RestTemplate</name>
-	<description>RestTemplate</description>
+	<name>Platform161Integration</name>
+	<description>Platform161-Integration</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
